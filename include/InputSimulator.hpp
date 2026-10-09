@@ -4,7 +4,8 @@
 class InputSimulator
 {
     INPUT inputs[2] = {};
+    int ENTER;
     public:
     void SimulateEnterPress();
-
+    InputSimulator();
 };
