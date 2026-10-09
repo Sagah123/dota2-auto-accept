@@ -5,7 +5,7 @@ class ProcessChecker
 {
     struct HandleDeleter{
         void operator()(HANDLE handle){
-            if(!INVALID_HANDLE_VALUE && !nullptr){
+            if(handle != INVALID_HANDLE_VALUE && handle != nullptr){
                 CloseHandle(handle);
             }
         }
